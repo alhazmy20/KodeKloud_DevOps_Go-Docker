@@ -1,0 +1,7 @@
+.env
+.env.example
+docker-compose.yaml
+Jenkinsfile
+.git
+.gitignore
+README.MD
