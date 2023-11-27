@@ -1,22 +1,21 @@
-
 # Docker Containerized Go WebAPI
 
-This is a simple project created to showcase what I've learned while attending the DevOps Learning Path on KodeKloud.
+This project is a simple showcase of my learnings from the DevOps Learning Path on KodeKloud.
 
-## Contains
+## Project Contents
 
 - Simple CRUD API using GoLang.
 - Simple test cases for every endpoint.
 - `Dockerfile` to containerize the WebAPI with Docker.
 - `docker-compose.yml` file is designed to orchestrate the deployment of a Go WebAPI and a MySQL database for development or production environments. It leverages Docker Compose to define and manage the services, their dependencies, and configurations.
-- `Jenkinsfile` A declarative pipeline that performs the following steps:
-    1. Cloning this git repository.
-    2. Running tests using the `go` command.
-    3. Building Go WebAPI into an `executable` file.
-    4. Building an image using Docker.
-    5. Pushing the image into a private repository.
+- `Jenkinsfile` A declarative pipeline with the following steps:
+    1. Clone this git repository.
+    2. Run tests using the `go` command.
+    3. Build Go WebAPI into an `executable` file.
+    4. Build an image using Docker.
+    5. Push the image into a private repository.
 
-## Requirements for Jenkins
+## Jenkins Requirements
 - [Go v1.21.1](https://go.dev/doc/install) installed on the Jenkins instance.
 - The following plugins should be installed on the Jenkins instance:
     - [Git Jenkins Plugin](https://plugins.jenkins.io/git/)
@@ -28,7 +27,7 @@ This is a simple project created to showcase what I've learned while attending t
 
 ## Environment Variables
 
-To run this project, you will need to create a `.env` file with the variables provided in the `.env.example` file.
+To run this project, create a `.env` file with the variables provided in the `.env.example` file.
 
 ## API Reference
 
